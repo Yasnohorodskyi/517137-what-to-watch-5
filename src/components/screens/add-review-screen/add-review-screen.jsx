@@ -9,16 +9,7 @@ const ReviewFormWithReviewForm = withReviewForm(ReviewForm);
 const AddReviewScreen = (props) => {
 
   const {
-<<<<<<< Updated upstream
-    film,
-    rating,
-    isValid,
-    fieldChangeHandler,
-    comment,
-    onSubmit
-=======
     film
->>>>>>> Stashed changes
   } = props;
 
   const {
@@ -53,56 +44,7 @@ const AddReviewScreen = (props) => {
       </div>
 
       <div className="add-review">
-<<<<<<< Updated upstream
-        <form action="#" className="add-review__form">
-          <div className="rating">
-            <div className="rating__stars">
-              {RATING_STARS.map((star) => {
-                return (
-                  <Fragment key={`star-${star}`}>
-                    <input
-                      className="rating__input"
-                      id={`star-${star}`}
-                      type="radio"
-                      name="rating"
-                      value={star}
-                      onChange={fieldChangeHandler}
-                      checked={+rating === star}
-                    />
-                    <label className="rating__label" htmlFor={`star-${star}`}>{star}</label>
-                  </Fragment>
-                );
-              })}
-            </div>
-          </div>
-
-          <div className="add-review__text" style={{
-            backgroundColor,
-            filter: `brightness(150%)`,
-          }}>
-            <textarea
-              className="add-review__textarea"
-              name="comment"
-              id="comment"
-              placeholder="Review text"
-              onChange={fieldChangeHandler}
-              minLength="50"
-              maxLength="400"
-            />
-            <div className="add-review__submit">
-              <button
-                className="add-review__btn"
-                type="submit"
-                onClick={handleFormSubmit}
-                disabled={!(isValid)}
-              >Post
-              </button>
-            </div>
-          </div>
-        </form>
-=======
         <ReviewFormWithReviewForm id={id}/>
->>>>>>> Stashed changes
       </div>
     </section>
   );

@@ -15,7 +15,7 @@ it(`Should button exit be pressed`, () => {
         videoCurrentTime={12}
         progressBarPosition={23}
         handlePlayerExitClick={handleBtnExitClick}
-        handlePlayerFullscreenClick={noop}
+        handlePlayerFullScreenClick={noop}
         handlePlayerPlayClick={noop}
         handlePlayerPauseClick={noop}
       >
@@ -38,7 +38,7 @@ it(`Should button play be pressed`, () => {
         videoCurrentTime={12}
         progressBarPosition={23}
         handlePlayerExitClick={noop}
-        handlePlayerFullscreenClick={noop}
+        handlePlayerFullScreenClick={noop}
         handlePlayerPlayClick={handleBtnPlayClick}
         handlePlayerPauseClick={noop}
       >
@@ -61,7 +61,7 @@ it(`Should button pause be pressed`, () => {
         videoCurrentTime={19}
         progressBarPosition={13}
         handlePlayerExitClick={noop}
-        handlePlayerFullscreenClick={noop}
+        handlePlayerFullScreenClick={noop}
         handlePlayerPlayClick={noop}
         handlePlayerPauseClick={handleBtnPauseClick}
       >

@@ -116,6 +116,7 @@ exports[`render Add Review Screen 1`] = `
       className="add-review__form"
       onSubmit={[Function]}
     >
+      
       <div
         className="rating"
       >
@@ -211,20 +212,15 @@ exports[`render Add Review Screen 1`] = `
       </div>
       <div
         className="add-review__text"
-        style={
-          Object {
-            "backgroundColor": "#795433",
-            "filter": "brightness(150%)",
-          }
-        }
       >
         <textarea
           className="add-review__textarea"
-          id="comment"
-          maxLength="400"
-          minLength="50"
-          name="comment"
+          disabled={false}
+          id="review-text"
+          name="review-text"
+          onChange={[Function]}
           placeholder="Review text"
+          value=""
         />
         <div
           className="add-review__submit"
@@ -232,7 +228,6 @@ exports[`render Add Review Screen 1`] = `
           <button
             className="add-review__btn"
             disabled={true}
-            onClick={[Function]}
             type="submit"
           >
             Post

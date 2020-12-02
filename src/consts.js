@@ -38,7 +38,6 @@ export const AppRoute = {
   MY_LIST: `/mylist/`,
   LOGIN: `/login`,
   FILMS: `/films/`,
-  FILMS: `/films/`,
   PLAYER: `/player/`,
   ANY: `*`
 };

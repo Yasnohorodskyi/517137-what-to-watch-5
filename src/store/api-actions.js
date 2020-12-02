@@ -28,8 +28,6 @@ export const login = ({login: email, password}) => (dispatch, _getState, api) =>
     .then(() => dispatch(redirectToRoute(AppRoute.ROOT)))
 );
 
-export const addReview = (filmId, {rating, comment}) => (dispatch, _getState, api) => (
-  api.post(APIRoute.COMMENTS + filmId, {rating, comment})
 export const addReview = (filmId, {reviewRating, reviewText}, error) => (dispatch, _getState, api) => (
   api.post(APIRoute.COMMENTS + filmId, {rating: reviewRating, comment: reviewText})
     .then(() => dispatch(redirectToRoute(AppRoute.FILMS + filmId)))
